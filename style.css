@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 *{
     font-family: "Jost", sans-serif;
+    color: 
+    rgb(54, 74, 21);
 }
 
 
@@ -12,7 +14,7 @@ h1{
     font-family: "Merriweather", serif;
     font-size: 60px;
     color: 
-    rgb(54, 74, 21);
+   
 }
 /* 
 .dropdown-content {
@@ -50,3 +52,17 @@ h1{
 
 
 }
+
+/* .hero-card-1{
+    background-image: url("/img/hero-card-1.jpg");
+    background-repeat: none;
+    background-size: cover;
+}.hero-card-2{
+    background-image: url("/img/hero-card-2.jpg");
+    background-repeat: none;
+    background-size: cover;
+}.hero-card-3{
+    background-image: url("/img/hero-card-3.jpg");
+    background-repeat: none;
+    background-size: cover;
+} */
