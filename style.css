@@ -5,16 +5,9 @@
     color: 
     rgb(54, 74, 21);
 }
-
-
-
-
-
 h1{
     font-family: "Merriweather", serif;
     font-size: 60px;
-    color: 
-   
 }
 /* 
 .dropdown-content {
@@ -33,7 +26,6 @@ h1{
     background-repeat: none;
     background-size: cover;
     padding-top: 210px;
-
 }
 
 .second-hero-pic{
@@ -41,28 +33,17 @@ h1{
     background-repeat: none;
     background-size: cover;
     padding-top: 210px;
-
-
 }
 .third-hero-pic{
     background-image: url("/img/hero-3.jpg");
     background-repeat: none;
     background-size: cover;
     padding-top: 210px;
-
-
 }
 
-/* .hero-card-1{
-    background-image: url("/img/hero-card-1.jpg");
+
+.orange-juice-bg-img{
+    background-image: url("/img/juice.jpg");
     background-repeat: none;
     background-size: cover;
-}.hero-card-2{
-    background-image: url("/img/hero-card-2.jpg");
-    background-repeat: none;
-    background-size: cover;
-}.hero-card-3{
-    background-image: url("/img/hero-card-3.jpg");
-    background-repeat: none;
-    background-size: cover;
-} */
+}
