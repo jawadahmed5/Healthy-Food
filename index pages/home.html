@@ -17,14 +17,17 @@
 
 <body>
     <div>
-        <div class="container pt-4">
+
+        <!-- Nav Bar for lg and md screens  -->
+
+        <div class="container pt-4 d-sm-none d-none d-lg-block d-md-block ">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
 
 
                     <h5 class="text-secondary">
 
-                        <iconify-icon class="me-3"
+                        <iconify-icon class="me-3 "
                             icon="simple-line-icons:earphones-alt"></iconify-icon>+1-800-123-45-67
                     </h5>
                 </div>
@@ -35,114 +38,277 @@
                                 data-bs-target="#offcanvasTop" aria-controls="offcanvasTop "> <iconify-icon
                                     class="fs-3   fw-semibold text-secondary"
                                     icon="iconamoon:search-thin"></iconify-icon></button>
-                            <span class=" fs-5 text-secondary ">Search</span>
+                            <span class=" fs-5 text-secondary  type="" data-bs-toggle=" offcanvas"
+                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop ">Search</span>
 
                         </div>
-                        <div class="d-flex ">
-                            <button class="bg-transparent border-0 text-center fs-5" type="" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop "> <iconify-icon
-                                    class=" fs-4  text-secondary" icon="line-md:account"></iconify-icon> </button>
-                            <span class="fs-5 text-secondary">My accounts</span>
-                        </div>
-                        <div class="d-flex">
-                            <button class="bg-transparent border-0 text-center " type="" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop "> <iconify-icon
-                                    class="  fs-3 text-secondary" icon="material-symbols-light:language"></iconify-icon>
-                            </button>
-                            <span class="fs-5 text-secondary"> English</span>
-                        </div>
+
+
+
+
+                        <button class="nav-item dropdown d-flex bg-white border-0">
+
+                            <iconify-icon class=" fs-4  text-secondary mx-2" icon="line-md:account"></iconify-icon>
+
+
+                            <span class="fs-5 text-secondary">
+                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    My Account
+                                </a>
+                                <ul class="dropdown-menu dropdown-content">
+                                    <li><a class="dropdown-item" href="/index pages/signin.html">Sign In</a></li>
+                                    <li><a class="dropdown-item" href="/index pages/index.html">Sign Up</a></li>
+
+                                </ul>
+                        </button>
+
+
+
+
+                        <button class="nav-item dropdown  d-flex bg-white border-0">
+
+                            <iconify-icon class=" fs-3  text-secondary mx-2"
+                                icon="material-symbols-light:language"></iconify-icon>
+
+
+                            <span class="fs-5 text-secondary">
+                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    English
+                                </a>
+                                <ul class="dropdown-menu dropdown-content w-auto">
+                                    <div>
+                                        <img width="30px" class="me-2" src="/img/country-1.svg" alt=""><span
+                                            class=" fs-5">English</span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <img width="30px" class="me-2" src="/img/country-2.svg" alt=""><span
+                                            class=" fs-5">French</span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <img width="30px" class="me-2" src="/img/de.svg" alt=""><span
+                                            class=" fs-5">German</span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <img width="30px" class="me-2" src="/img/country-4.svg" alt=""><span
+                                            class=" fs-5">Spanish</span>
+                                    </div>
+                                </ul>
+                        </button>
+
+
+
+
+
 
                     </div>
 
                 </div>
             </div>
         </div>
+        <!-- Nav BAr for sm screens -->
+        <div class="container pt-4 d-sm-block d-block d-lg-none d-md-none">
+            <div class="row">
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 d-flex justify-content-between">
+                    <div class="d-flex  ">
+                        <div class="d-flex  ">
+                            <button class="bg-transparent border-0  " type="" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop "> <iconify-icon
+                                    class="fs-3   fw-semibold text-secondary"
+                                    icon="iconamoon:search-thin"></iconify-icon></button>
+                            <span class=" fs-5 text-secondary  type="" data-bs-toggle=" offcanvas"
+                                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop ">Search</span>
+
+                        </div>
 
 
+
+
+                        <button class="nav-item dropdown d-flex bg-white border-0">
+
+                            <iconify-icon class=" fs-4  text-secondary mx-2" icon="line-md:account"></iconify-icon>
+
+
+                            <span class="fs-5 text-secondary">
+                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    My Account
+                                </a>
+                                <ul class="dropdown-menu dropdown-content w-auto">
+                                    <li><a class="dropdown-item" href="/index pages/signin.html">Sign In</a></li>
+                                    <li><a class="dropdown-item" href="/index pages/index.html">Sign Up</a></li>
+
+                                </ul>
+                        </button>
+                    </div>
+
+                    <div class=" ">
+                        <button class="nav-item dropdown  d-flex bg-white border-0 ">
+
+                            <iconify-icon class=" fs-3  text-secondary "
+                                icon="material-symbols-light:language"></iconify-icon>
+
+
+                            <span class="fs-5 text-secondary">
+                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    English
+                                </a>
+                                <ul class="dropdown-menu  px-3">
+                                    <div>
+                                        <img width="30px" class="me-2" src="/img/country-1.svg" alt=""><span
+                                            class=" fs-5">English</span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <img width="30px" class="me-2" src="/img/country-2.svg" alt=""><span
+                                            class=" fs-5">French</span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <img width="30px" class="me-2" src="/img/de.svg" alt=""><span
+                                            class=" fs-5">German</span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <img width="30px" class="me-2" src="/img/country-4.svg" alt=""><span
+                                            class=" fs-5">Spanish</span>
+                                    </div>
+                                </ul>
+                        </button>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Header -->
         <header class=" position-sticky top-0 bg-white z-1">
 
-        <nav class="navbar navbar-expand-lg bg-body-white  py-4">
-            <div class="container">
-             
-                <a class="navbar-brand " href="/index.html"><img width="210px" src="/img/header logo.png"
-                    alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-                   
-                    
-                        <li class="nav-item dropdown mx-3 list-unstyled text-decoration-none ">
-                          <a class="nav-link fs-5 fw-medium list-unstyled  " data-bs-toggle="dropdown" href="/index pages/home.html" role="button" aria-expanded="false">Home</a>
-                          <ul class="dropdown-menu dropdown-content ">
-                            <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  " href="/index pages/home.html">Home 1</a></li>
-                            <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  " href="/index pages/home.html">Home 2</a></li>
-                            <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  " href="/index pages/home.html">Home 3</a></li>
-                            <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  " href="/index pages/home.html">Home 4 Colorful</a></li> 
-                            <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  " href="/index pages/home.html">Home 5 Farm</a></li>
-                            <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  " href="/index pages/home.html">Home 6 Spicy</a></li>
-                            <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  " href="/index pages/home.html">Home 7</a></li>
-                            <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  " href="/index pages/home.html">Home-8</a></li>
-                            <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  " href="/index pages/home.html">Home 9</a></li>
-                            <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  " href="/index pages/home.html">Home 11</a></li>
-                            <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  " href="/index pages/home.html">Home 12</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown mx-3 ">
-                            <a class="nav-link fs-5 fw-medium" data-bs-toggle="dropdown" href="/index pages/home.html" role="button" aria-expanded="false">Pages</a>
-                            <ul class="dropdown-menu dropdown-content">
-                              <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">About</a></li>
-                              <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">Team</a></li>
-                              <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">Gallery</a></li>
-                              <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">Contacts</a></li>
-                              <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">Our Workshops</a></li>
-                              <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">Services</a></li>
-                              <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">Quick Order</a></li>
-                              <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">FAQs</a></li>
-                              <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">404 Page</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item dropdown mx-3">
-                            <a class="nav-link fs-5 fw-medium" data-bs-toggle="dropdown" href="/index pages/home.html" role="button" aria-expanded="false">Shop</a>
-                            <ul class="dropdown-menu dropdown-content">
-                              <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">Cart</a></li>
-                              <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">My Account</a></li>
-                              <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">Listing</a></li>
-                              <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">Single</a></li>
-                              <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">Checkout</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item dropdown mx-3">
-                            <a class="nav-link fs-5 fw-medium" data-bs-toggle="dropdown" href="/index pages/home.html" role="button" aria-expanded="false">Blog</a>
-                            <ul class="dropdown-menu dropdown-content">
-                                <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">Listing</a></li>
-                                <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">Single</a></li>
-                                <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary" href="/index pages/home.html">Postcast</a></li>></li>
-                            </ul>
-                          </li>
-                        
-    
-    
-                          <li class="nav-item dropdown mx-3">
-                            <a class="nav-link fs-5 fw-medium" data-bs-toggle="dropdown" href="/index pages/home.html" role="button" aria-expanded="false">Elements</a>
-                          
-                          </li>
-                        
-                      </ul>
-    
-                </ul>
+            <nav class="navbar navbar-expand-lg bg-body-white  py-4">
+                <div class="container">
 
-                <button class="d-flex justify-content-between bg-white border border-dark-subtle rounded-3">
-                <iconify-icon
-                                        class="icon fs-3 text-center "
-                                        icon="material-symbols:shopping-bag-outline"></iconify-icon>   <span class="fs-5">$0.00 / 0 items</span>
-                                    </button>            
-                                    
-                                <iconify-icon class="icon fs-3 mx-2 " icon="tabler:heart"></iconify-icon>
-              </div>
-            </div>
-          </nav>
+                    <a class="navbar-brand " href="/index pages/home.html"><img width="210px" src="/img/header logo.png"
+                            alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+
+
+                            <li class="nav-item dropdown mx-3 list-unstyled text-decoration-none ">
+                                <a class="nav-link fs-5 fw-medium list-unstyled  " data-bs-toggle="dropdown"
+                                    href="/index pages/home.html" role="button" aria-expanded="false">Home</a>
+                                <ul class="dropdown-menu dropdown-content ">
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  "
+                                            href="/index pages/home.html">Home 1</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  "
+                                            href="/index pages/home.html">Home 2</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  "
+                                            href="/index pages/home.html">Home 3</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  "
+                                            href="/index pages/home.html">Home 4 Colorful</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  "
+                                            href="/index pages/home.html">Home 5 Farm</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  "
+                                            href="/index pages/home.html">Home 6 Spicy</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  "
+                                            href="/index pages/home.html">Home 7</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  "
+                                            href="/index pages/home.html">Home-8</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  "
+                                            href="/index pages/home.html">Home 9</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  "
+                                            href="/index pages/home.html">Home 11</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary  "
+                                            href="/index pages/home.html">Home 12</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown mx-3 ">
+                                <a class="nav-link fs-5 fw-medium" data-bs-toggle="dropdown"
+                                    href="/index pages/home.html" role="button" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu dropdown-content">
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">About</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">Team</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">Gallery</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">Contacts</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">Our Workshops</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">Services</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">Quick Order</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">FAQs</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">404 Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown mx-3">
+                                <a class="nav-link fs-5 fw-medium" data-bs-toggle="dropdown"
+                                    href="/index pages/home.html" role="button" aria-expanded="false">Shop</a>
+                                <ul class="dropdown-menu dropdown-content">
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">Cart</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">My Account</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">Listing</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">Single</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">Checkout</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown mx-3">
+                                <a class="nav-link fs-5 fw-medium" data-bs-toggle="dropdown"
+                                    href="/index pages/home.html" role="button" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu dropdown-content">
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">Listing</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">Single</a></li>
+                                    <li><a class="dropdown-item py-2 fs-5 fw-normal text-secondary"
+                                            href="/index pages/home.html">Postcast</a></li>>
+                            </li>
+                        </ul>
+                        </li>
+
+
+
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link fs-5 fw-medium" data-bs-toggle="dropdown" href="/index pages/home.html"
+                                role="button" aria-expanded="false">Elements</a>
+
+                        </li>
+
+                        </ul>
+
+                        </ul>
+
+                        <button class="d-flex justify-content-between bg-white border border-dark-subtle rounded-3">
+                            <iconify-icon class="icon fs-3 text-center "
+                                icon="material-symbols:shopping-bag-outline"></iconify-icon> <span class="fs-5">$0.00 /
+                                0 items</span>
+                        </button>
+
+                        <iconify-icon class="icon fs-3 mx-2 " icon="tabler:heart"></iconify-icon>
+                    </div>
+                </div>
+            </nav>
 
         </header>
 
@@ -183,146 +349,736 @@
 
 
 
-            <div class="position-relative">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="position-relative">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item w-100 vh-100  active hero-section ">
+                        <div class="container ">
+                            <h1 class="ms-5  fw-bold ">Healthy Foods</h1>
+                            <p class="ms-5 fs-4 fw-normal text-secondary">Your journey to a healthier life start
+                                here
+                            </p>
+                            <button class="ms-5 fs-5 border-0 fw-normal text-secondary">Shop now ></button>
+                        </div>
+                    </div>
+                    <div class="carousel-item second-hero-pic w-100 vh-100">
+                        <div class="container text-center">
+                            <h1 class="ms-5  fw-bold ">Fresh Sale Days</h1>
+                            <p class="ms-5 fs-4 fw-normal text-secondary">Special offers all fruit products</p>
+                            <button class="ms-5 fs-5 border-0 fw-normal text-secondary">Shop now ></button>
+                        </div>
+                    </div>
+                    <div class="carousel-item third-hero-pic w-100 vh-100">
+                        <div class="container ">
+                            <h1 class="ms-5  fw-bold ">Natural Aloe Vera</h1>
+                            <p class="ms-5 fs-4 fw-normal text-secondary">Special offer this week</p>
+                            <button class="ms-5 fs-5 border-0 fw-normal text-secondary">Shop now ></button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+
+
+
+            <div class="container translate-middle-y ">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="card ">
+                            <img src="/img/hero-card-1.jpg">
+                            <div class="position-absolute  mt-5 container fs-5 fw-normal ">
+                                <h5>Up to 70% discount</h5>
+                                <button class=" fs-5 border-0 fw-normal text-secondary">Shop now ></button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="card ">
+                            <img src="/img/hero-card-2.jpg">
+                            <div class="position-absolute  mt-5 container fs-5 fw-normal">
+                                <h5>Up to 70% discount</h5>
+                                <button class=" fs-5 border-0 fw-normal text-secondary">Shop now ></button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="card ">
+                            <img src="/img/hero-card-3.jpg">
+                            <div class="position-absolute mt-5 container fs-5 fw-normal">
+                                <h5>Up to 70% discount</h5>
+                                <button class=" fs-5 border-0 fw-normal text-secondary">Shop now ></button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <div class="text-center">
+        <h1>Featured Products</h1>
+        <p class="fs-5 fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+
+
+
+
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12  mt-sm-5 ">
+                <div class="p-4 border border-1 border-black-50 rounded-3">
+                    <img class="img-fluid" src="/img/product-card-1.jpg" alt="">
+                    <div class="text-center ">
+                        <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">N-Farm</button>
+                        <p class="mt-4 fs-5 fw-normal">Organic Grape</p>
+                        <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
+                            class="fs-5 fw-normal ms-3">$12.40</span>
+                        <div class="">
+                            <button class=" card-group border-0 bg-white text-center mt-3">
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="line-md:arrow-right"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
+                                    icon="iconamoon:eye"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="tabler:heart">""</iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="mdi:repost"></iconify-icon>
+
+
+
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
+                <div class="p-4 border border-1 border-black-50 rounded-3">
+                    <img class="img-fluid" src="/img/product-card-2.jpg" alt="">
+                    <div class="text-center ">
+                        <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">Farmer</button>
+                        <p class="mt-4 fs-5 fw-normal">Organic Corn</p>
+                        <s class="fs-5 fw-normal text-body-tertiary">$34.40</s><span
+                            class="fs-5 fw-normal ms-3">$32.20</span>
+                        <div class="">
+                            <button class=" card-group border-0 bg-white text-center mt-3">
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="line-md:arrow-right"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
+                                    icon="iconamoon:eye"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="tabler:heart">""</iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="mdi:repost"></iconify-icon>
+
+
+
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
+                <div class="p-4 border border-1 border-black-50 rounded-3">
+                    <img class="img-fluid" src="/img/product-card-3.jpg" alt="">
+                    <div class="text-center ">
+                        <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">E-Farm</button>
+                        <p class="mt-4 fs-5 fw-normal">Organic Cherry</p>
+                        <s class="fs-5 fw-normal text-body-tertiary">$35.50</s><span
+                            class="fs-5 fw-normal ms-3">$15.45</span>
+                        <div class="">
+                            <button class=" card-group border-0 bg-white text-center mt-3">
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="line-md:arrow-right"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
+                                    icon="iconamoon:eye"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="tabler:heart">""</iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="mdi:repost"></iconify-icon>
+
+
+
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
+                <div class="p-4 border border-1 border-black-50 rounded-3">
+                    <img class="img-fluid" src="/img/product-card-4.jpg" alt="">
+                    <div class="text-center ">
+                        <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">N-Farm</button>
+                        <p class="mt-4 fs-5 fw-normal">Organic Lemon</p>
+                        <s class="fs-5 fw-normal text-body-tertiary">$23.55</s><span
+                            class="fs-5 fw-normal ms-3">$19.45</span>
+                        <div class="">
+                            <button class=" card-group border-0 bg-white text-center mt-3">
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="line-md:arrow-right"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
+                                    icon="iconamoon:eye"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="tabler:heart">""</iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="mdi:repost"></iconify-icon>
+
+
+
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12  mt-sm-5 ">
+                <div class="p-4 border border-1 border-black-50 rounded-3">
+                    <img class="img-fluid" src="/img/product-card-5.jpg" alt="">
+                    <div class="text-center ">
+                        <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">H-Life</button>
+                        <p class="mt-4 fs-5 fw-normal">Organic Tomato</p>
+                        <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
+                            class="fs-5 fw-normal ms-3">$12.40</span>
+                        <div class="">
+                            <button class=" card-group border-0 bg-white text-center mt-3">
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="line-md:arrow-right"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
+                                    icon="iconamoon:eye"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="tabler:heart">""</iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="mdi:repost"></iconify-icon>
+
+
+
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
+                <div class="p-4 border border-1 border-black-50 rounded-3">
+                    <img class="img-fluid" src="/img/product-card-6.jpg" alt="">
+                    <div class="text-center ">
+                        <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">Farmer</button>
+                        <p class="mt-4 fs-5 fw-normal">Organic Lettuce</p>
+                        <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
+                            class="fs-5 fw-normal ms-3">$12.40</span>
+                        <div class="">
+                            <button class=" card-group border-0 bg-white text-center mt-3">
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="line-md:arrow-right"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
+                                    icon="iconamoon:eye"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="tabler:heart">""</iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="mdi:repost"></iconify-icon>
+
+
+
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
+                <div class="p-4 border border-1 border-black-50 rounded-3">
+                    <img class="img-fluid" src="/img/product-card-7.jpg" alt="">
+                    <div class="text-center ">
+                        <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">N-Farm</button>
+                        <p class="mt-4 fs-5 fw-normal">Organic Patato</p>
+                        <span class="fs-5 fw-normal ms-3">$14</span>
+                        <div class="">
+                            <button class=" card-group border-0 bg-white text-center mt-3">
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="line-md:arrow-right"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
+                                    icon="iconamoon:eye"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="tabler:heart">""</iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="mdi:repost"></iconify-icon>
+
+
+
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
+                <div class="p-4 border border-1 border-black-50 rounded-3">
+                    <img class="img-fluid" src="/img/product-card-8.jpg" alt="">
+                    <div class="text-center ">
+                        <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">E-Farm</button>
+                        <p class="mt-4 fs-5 fw-normal">Organic Mushroom</p>
+                        <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
+                            class="fs-5 fw-normal ms-3">$12.40</span>
+                        <div class="">
+                            <button class=" card-group border-0 bg-white text-center mt-3">
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="line-md:arrow-right"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
+                                    icon="iconamoon:eye"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="tabler:heart">""</iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="mdi:repost"></iconify-icon>
+
+
+
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12  mt-sm-5 ">
+                <div class="p-4 border border-1 border-black-50 rounded-3">
+                    <img class="img-fluid" src="/img/product-card-9.jpg" alt="">
+                    <div class="text-center ">
+                        <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">E-Farm</button>
+                        <p class="mt-4 fs-5 fw-normal">Organic Banana</p>
+                        <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
+                            class="fs-5 fw-normal ms-3">$12.40</span>
+                        <div class="">
+                            <button class=" card-group border-0 bg-white text-center mt-3">
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="line-md:arrow-right"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
+                                    icon="iconamoon:eye"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="tabler:heart">""</iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="mdi:repost"></iconify-icon>
+
+
+
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
+                <div class="p-4 border border-1 border-black-50 rounded-3">
+                    <img class="img-fluid" src="/img/product-card-10.jpg" alt="">
+                    <div class="text-center ">
+                        <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">H-Life</button>
+                        <p class="mt-4 fs-5 fw-normal">Organic Bean</p>
+                        <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
+                            class="fs-5 fw-normal ms-3">$12.40</span>
+                        <div class="">
+                            <button class=" card-group border-0 bg-white text-center mt-3">
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="line-md:arrow-right"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
+                                    icon="iconamoon:eye"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="tabler:heart">""</iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="mdi:repost"></iconify-icon>
+
+
+
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
+                <div class="p-4 border border-1 border-black-50 rounded-3">
+                    <img class="img-fluid" src="/img/product-card-11.jpg" alt="">
+                    <div class="text-center ">
+                        <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">N-Farm</button>
+                        <p class="mt-4 fs-5 fw-normal">Organic Carrot</p>
+                        <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
+                            class="fs-5 fw-normal ms-3">$12.40</span>
+                        <div class="">
+                            <button class=" card-group border-0 bg-white text-center mt-3">
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="line-md:arrow-right"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
+                                    icon="iconamoon:eye"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="tabler:heart">""</iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="mdi:repost"></iconify-icon>
+
+
+
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12  mt-sm-5 ">
+                <div class="p-4 border border-1 border-black-50 rounded-3">
+                    <img class="img-fluid" src="/img/product-card-12.jpg" alt="">
+                    <div class="text-center ">
+                        <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">E-Farm</button>
+                        <p class="mt-4 fs-5 fw-normal">Organic Apple</p>
+                        <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
+                            class="fs-5 fw-normal ms-3">$12.40</span>
+                        <div class="">
+                            <button class=" card-group border-0 bg-white text-center mt-3">
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="line-md:arrow-right"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
+                                    icon="iconamoon:eye"></iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="tabler:heart">""</iconify-icon>
+                                <iconify-icon
+                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    icon="mdi:repost"></iconify-icon>
+
+
+
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="container mt-5">
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 border border-1 border-black-50 border-start-0">
+
+                <h4 class="px-5 pb-5 mt-5 pt-5">Testimonials</h4>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item w-100 vh-100  active hero-section ">
-                            <div class="container ">
-                                <h1 class="ms-5  fw-bold ">Healthy Foods</h1>
-                                <p class="ms-5 fs-4 fw-normal text-secondary">Your journey to a healthier life start
-                                    here
-                                </p>
-                                <button class="ms-5 fs-5 border-0 fw-normal text-secondary">Shop now ></button>
-                            </div>
+                        <div class="carousel-item active px-5 pb-5">
+                            <p class="fs-5 fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur elit.
+                                Maecenas dictum a dolor vitae varius. Cras at efficitur nisl, at varius leo.
+                                Vestibulum vel adipiscing orci justo.
+
+                            </p>
+                            <h6 class="text-warning-emphasis fs-5 fw-medium">Kaycee Hess</h6>
+                            <span class="fs-5 fw-normal text-secondary">Human Resources</span>
                         </div>
-                        <div class="carousel-item second-hero-pic w-100 vh-100">
-                            <div class="container text-center">
-                                <h1 class="ms-5  fw-bold ">Fresh Sale Days</h1>
-                                <p class="ms-5 fs-4 fw-normal text-secondary">Special offers all fruit products</p>
-                                <button class="ms-5 fs-5 border-0 fw-normal text-secondary">Shop now ></button>
-                            </div>
+                        <div class="carousel-item px-5 pb-5">
+                            <p class="fs-5 fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur elit.
+                                Maecenas dictum a dolor vitae varius. Cras at efficitur nisl, at varius leo.
+                                Vestibulum vel adipiscing orci justo.
+
+                            </p>
+                            <h6 class="text-warning-emphasis fs-5 fw-medium">Terry Figueroa</h6>
+                            <span class="fs-5 fw-normal text-secondary">Marketing Manager</span>
                         </div>
-                        <div class="carousel-item third-hero-pic w-100 vh-100">
-                            <div class="container ">
-                                <h1 class="ms-5  fw-bold ">Natural Aloe Vera</h1>
-                                <p class="ms-5 fs-4 fw-normal text-secondary">Special offer this week</p>
-                                <button class="ms-5 fs-5 border-0 fw-normal text-secondary">Shop now ></button>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+                        <div class="carousel-item px-5 pb-5">
+                            <p class="fs-5 fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur elit.
+                                Maecenas dictum a dolor vitae varius. Cras at efficitur nisl, at varius leo.
+                                Vestibulum vel adipiscing orci justo.
 
-
-
-
-
-                <div class="container translate-middle-y ">
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                            <div class="card ">
-                                <img src="/img/hero-card-1.jpg">
-                                <div class="position-absolute  mt-5 container fs-5 fw-normal ">
-                                    <h5>Up to 70% discount</h5>
-                                    <button class=" fs-5 border-0 fw-normal text-secondary">Shop now ></button>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                            <div class="card ">
-                                <img src="/img/hero-card-2.jpg">
-                                <div class="position-absolute  mt-5 container fs-5 fw-normal">
-                                    <h5>Up to 70% discount</h5>
-                                    <button class=" fs-5 border-0 fw-normal text-secondary">Shop now ></button>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                            <div class="card ">
-                                <img src="/img/hero-card-3.jpg">
-                                <div class="position-absolute mt-5 container fs-5 fw-normal">
-                                    <h5>Up to 70% discount</h5>
-                                    <button class=" fs-5 border-0 fw-normal text-secondary">Shop now ></button>
-
-                                </div>
-                            </div>
+                            </p>
+                            <h6 class="text-warning-emphasis fs-5 fw-medium">Tiana Mcdonnell</h6>
+                            <span class="fs-5 fw-normal text-secondary">Sales Manager</span>
                         </div>
                     </div>
                 </div>
-
-                -->
-
-
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 border border-1 border-black-50 border-end-0">
 
 
+                <h4 class="px-5 pb-5 mt-5 pt-5">Recent Posts</h4>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active px-5 pb-5">
+                            <p class="fs-5 fw-normal text-secondary">Streamer fish California halibut Pacific
+                                saury.fish California hal Slickhead grunion lake trout. Canthigaster rostrata
+                                spikefish brown trout loach summer flounder.
 
+                            </p>
+                            <h6 class="text-warning-emphasis fs-5 fw-medium">Nine Nine</h6>
+                            <span class="fs-5 fw-normal text-secondary">04 June, 2007 </span>
+                        </div>
+                        <div class="carousel-item px-5 pb-5">
+                            <p class="fs-5 fw-normal text-secondary">Streamer fish California halibut Pacific
+                                saury.fish California hal Slickhead grunion lake trout. Canthigaster rostrata
+                                spikefish brown trout loach summer flounder.
 
+                            </p>
+                            <h6 class="text-warning-emphasis fs-5 fw-medium">Nine Nine</h6>
+                            <span class="fs-5 fw-normal text-secondary">08 Feburary, 2020</span>
+                        </div>
+                        <div class="carousel-item px-5 pb-5">
+                            <p class="fs-5 fw-normal text-secondary">Streamer fish California halibut Pacific
+                                saury.fish California hal Slickhead grunion lake trout. Canthigaster rostrata
+                                spikefish brown trout loach summer flounder.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                            </p>
+                            <h6 class="text-warning-emphasis fs-5 fw-medium">Nine Nine</h6>
+                            <span class="fs-5 fw-normal text-secondary">December 31, 2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
+    <div class="container mt-5 h-100">
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 h-100 mt-5">
+                <h1 class="fs-2 fw-bold mt-5">Get exclusive offers</h1>
+                <p class="fs-5 fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    phasellus vestibulum fermentum laoreet.</p>
+                <div>
 
 
+                    <div class="input-group mb-3 w-75 mt-5">
+                        <input type="email" class="form-control py-3 w-75" placeholder="Enter your e-mail adrress..."
+                            aria-label="Email Adrress" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary px-4 fs-3 " type="button"
+                            id="button-addon2"><iconify-icon icon="fa:send"></iconify-icon></button>
+                    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+                </div>
 
             </div>
 
@@ -331,697 +1087,102 @@
 
 
 
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 h-100  orange-juice-bg-img">
 
-
-
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-        <div class="text-center">
-            <h1>Featured Products</h1>
-            <p class="fs-5 fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-
-
-
-
-
-
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12  mt-sm-5 ">
-                    <div class="p-4 border border-1 border-black-50 rounded-3">
-                        <img class="img-fluid" src="/img/product-card-1.jpg" alt="">
-                        <div class="text-center ">
-                            <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">N-Farm</button>
-                            <p class="mt-4 fs-5 fw-normal">Organic Grape</p>
-                            <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
-                                class="fs-5 fw-normal ms-3">$12.40</span>
-                            <div class="">
-                                <button class=" card-group border-0 bg-white text-center mt-3">
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="line-md:arrow-right"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
-                                        icon="iconamoon:eye"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="tabler:heart">""</iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="mdi:repost"></iconify-icon>
-
-
-
-                                </button>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
-                    <div class="p-4 border border-1 border-black-50 rounded-3">
-                        <img class="img-fluid" src="/img/product-card-2.jpg" alt="">
-                        <div class="text-center ">
-                            <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">Farmer</button>
-                            <p class="mt-4 fs-5 fw-normal">Organic Corn</p>
-                            <s class="fs-5 fw-normal text-body-tertiary">$34.40</s><span
-                                class="fs-5 fw-normal ms-3">$32.20</span>
-                            <div class="">
-                                <button class=" card-group border-0 bg-white text-center mt-3">
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="line-md:arrow-right"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
-                                        icon="iconamoon:eye"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="tabler:heart">""</iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="mdi:repost"></iconify-icon>
-
-
-
-                                </button>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
-                    <div class="p-4 border border-1 border-black-50 rounded-3">
-                        <img class="img-fluid" src="/img/product-card-3.jpg" alt="">
-                        <div class="text-center ">
-                            <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">E-Farm</button>
-                            <p class="mt-4 fs-5 fw-normal">Organic Cherry</p>
-                            <s class="fs-5 fw-normal text-body-tertiary">$35.50</s><span
-                                class="fs-5 fw-normal ms-3">$15.45</span>
-                            <div class="">
-                                <button class=" card-group border-0 bg-white text-center mt-3">
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="line-md:arrow-right"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
-                                        icon="iconamoon:eye"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="tabler:heart">""</iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="mdi:repost"></iconify-icon>
-
-
-
-                                </button>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
-                    <div class="p-4 border border-1 border-black-50 rounded-3">
-                        <img class="img-fluid" src="/img/product-card-4.jpg" alt="">
-                        <div class="text-center ">
-                            <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">N-Farm</button>
-                            <p class="mt-4 fs-5 fw-normal">Organic Lemon</p>
-                            <s class="fs-5 fw-normal text-body-tertiary">$23.55</s><span
-                                class="fs-5 fw-normal ms-3">$19.45</span>
-                            <div class="">
-                                <button class=" card-group border-0 bg-white text-center mt-3">
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="line-md:arrow-right"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
-                                        icon="iconamoon:eye"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="tabler:heart">""</iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="mdi:repost"></iconify-icon>
-
-
-
-                                </button>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-
-
+                <img class="img-fluid" src="/img/juice.jpg" alt="">
             </div>
         </div>
+    </div>
 
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12  mt-sm-5 ">
-                    <div class="p-4 border border-1 border-black-50 rounded-3">
-                        <img class="img-fluid" src="/img/product-card-5.jpg" alt="">
-                        <div class="text-center ">
-                            <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">H-Life</button>
-                            <p class="mt-4 fs-5 fw-normal">Organic Tomato</p>
-                            <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
-                                class="fs-5 fw-normal ms-3">$12.40</span>
-                            <div class="">
-                                <button class=" card-group border-0 bg-white text-center mt-3">
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="line-md:arrow-right"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
-                                        icon="iconamoon:eye"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="tabler:heart">""</iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="mdi:repost"></iconify-icon>
 
+    <footer class="bg-light pt-5">
 
-
-                                </button>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
-                    <div class="p-4 border border-1 border-black-50 rounded-3">
-                        <img class="img-fluid" src="/img/product-card-6.jpg" alt="">
-                        <div class="text-center ">
-                            <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">Farmer</button>
-                            <p class="mt-4 fs-5 fw-normal">Organic Lettuce</p>
-                            <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
-                                class="fs-5 fw-normal ms-3">$12.40</span>
-                            <div class="">
-                                <button class=" card-group border-0 bg-white text-center mt-3">
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="line-md:arrow-right"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
-                                        icon="iconamoon:eye"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="tabler:heart">""</iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="mdi:repost"></iconify-icon>
-
-
-
-                                </button>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
-                    <div class="p-4 border border-1 border-black-50 rounded-3">
-                        <img class="img-fluid" src="/img/product-card-7.jpg" alt="">
-                        <div class="text-center ">
-                            <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">N-Farm</button>
-                            <p class="mt-4 fs-5 fw-normal">Organic Patato</p>
-                            <span class="fs-5 fw-normal ms-3">$14</span>
-                            <div class="">
-                                <button class=" card-group border-0 bg-white text-center mt-3">
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="line-md:arrow-right"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
-                                        icon="iconamoon:eye"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="tabler:heart">""</iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="mdi:repost"></iconify-icon>
-
-
-
-                                </button>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
-                    <div class="p-4 border border-1 border-black-50 rounded-3">
-                        <img class="img-fluid" src="/img/product-card-8.jpg" alt="">
-                        <div class="text-center ">
-                            <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">E-Farm</button>
-                            <p class="mt-4 fs-5 fw-normal">Organic Mushroom</p>
-                            <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
-                                class="fs-5 fw-normal ms-3">$12.40</span>
-                            <div class="">
-                                <button class=" card-group border-0 bg-white text-center mt-3">
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="line-md:arrow-right"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
-                                        icon="iconamoon:eye"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="tabler:heart">""</iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="mdi:repost"></iconify-icon>
-
-
-
-                                </button>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-
-
-            </div>
-        </div>
-
-
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12  mt-sm-5 ">
-                    <div class="p-4 border border-1 border-black-50 rounded-3">
-                        <img class="img-fluid" src="/img/product-card-9.jpg" alt="">
-                        <div class="text-center ">
-                            <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">E-Farm</button>
-                            <p class="mt-4 fs-5 fw-normal">Organic Banana</p>
-                            <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
-                                class="fs-5 fw-normal ms-3">$12.40</span>
-                            <div class="">
-                                <button class=" card-group border-0 bg-white text-center mt-3">
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="line-md:arrow-right"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
-                                        icon="iconamoon:eye"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="tabler:heart">""</iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="mdi:repost"></iconify-icon>
-
-
-
-                                </button>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
-                    <div class="p-4 border border-1 border-black-50 rounded-3">
-                        <img class="img-fluid" src="/img/product-card-10.jpg" alt="">
-                        <div class="text-center ">
-                            <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">H-Life</button>
-                            <p class="mt-4 fs-5 fw-normal">Organic Bean</p>
-                            <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
-                                class="fs-5 fw-normal ms-3">$12.40</span>
-                            <div class="">
-                                <button class=" card-group border-0 bg-white text-center mt-3">
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="line-md:arrow-right"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
-                                        icon="iconamoon:eye"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="tabler:heart">""</iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="mdi:repost"></iconify-icon>
-
-
-
-                                </button>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
-                    <div class="p-4 border border-1 border-black-50 rounded-3">
-                        <img class="img-fluid" src="/img/product-card-11.jpg" alt="">
-                        <div class="text-center ">
-                            <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">N-Farm</button>
-                            <p class="mt-4 fs-5 fw-normal">Organic Carrot</p>
-                            <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
-                                class="fs-5 fw-normal ms-3">$12.40</span>
-                            <div class="">
-                                <button class=" card-group border-0 bg-white text-center mt-3">
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="line-md:arrow-right"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
-                                        icon="iconamoon:eye"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="tabler:heart">""</iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="mdi:repost"></iconify-icon>
-
-
-
-                                </button>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12  mt-sm-5 ">
-                    <div class="p-4 border border-1 border-black-50 rounded-3">
-                        <img class="img-fluid" src="/img/product-card-12.jpg" alt="">
-                        <div class="text-center ">
-                            <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">E-Farm</button>
-                            <p class="mt-4 fs-5 fw-normal">Organic Apple</p>
-                            <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
-                                class="fs-5 fw-normal ms-3">$12.40</span>
-                            <div class="">
-                                <button class=" card-group border-0 bg-white text-center mt-3">
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="line-md:arrow-right"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
-                                        icon="iconamoon:eye"></iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="tabler:heart">""</iconify-icon>
-                                    <iconify-icon
-                                        class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
-                                        icon="mdi:repost"></iconify-icon>
-
-
-
-                                </button>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-        <div class="container mt-5">
-
+        <div class="container pt-5">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12 border border-1 border-black-50 border-start-0">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 mt-5">
+                    <a href="/index pages/home.html"> <img src="/img/header logo.png" alt=""></a>
+                    <p class="fs-5 fw-normal text-secondary mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Nulla nec nisi ac turpis laoreet auctor sed sed turpis.</p>
+                    <span class="fs-5 fw-medium mt-5 ">Address</span>
+                    <p class="fs-6 fw-normal text-secondary">241 Devonshiren Street Lebanon, PA 17042</p>
+                    <span class="fs-5 fw-medium mt-5">Phone</span>
+                    <p class="fs-5 fw-normal text-secondary">+1-800-123-45-67</p>
+                    <span class="fs-5 fw-medium mt-5">Email</span>
+                    <p class="fs-5 fw-normal text-secondary ">sales@naturally.com</p>
+                </div>
 
-                    <h4 class="px-5 pb-5 mt-5 pt-5">Testimonials</h4>
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active px-5 pb-5">
-                                <p class="fs-5 fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur elit.
-                                    Maecenas dictum a dolor vitae varius. Cras at efficitur nisl, at varius leo.
-                                    Vestibulum vel adipiscing orci justo.
 
-                                </p>
-                                <h6 class="text-warning-emphasis fs-5 fw-medium">Kaycee Hess</h6>
-                                <span class="fs-5 fw-normal text-secondary">Human Resources</span>
-                            </div>
-                            <div class="carousel-item px-5 pb-5">
-                                <p class="fs-5 fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur elit.
-                                    Maecenas dictum a dolor vitae varius. Cras at efficitur nisl, at varius leo.
-                                    Vestibulum vel adipiscing orci justo.
 
-                                </p>
-                                <h6 class="text-warning-emphasis fs-5 fw-medium">Terry Figueroa</h6>
-                                <span class="fs-5 fw-normal text-secondary">Marketing Manager</span>
-                            </div>
-                            <div class="carousel-item px-5 pb-5">
-                                <p class="fs-5 fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur elit.
-                                    Maecenas dictum a dolor vitae varius. Cras at efficitur nisl, at varius leo.
-                                    Vestibulum vel adipiscing orci justo.
 
-                                </p>
-                                <h6 class="text-warning-emphasis fs-5 fw-medium">Tiana Mcdonnell</h6>
-                                <span class="fs-5 fw-normal text-secondary">Sales Manager</span>
-                            </div>
-                        </div>
+
+
+
+
+
+
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 pt-5"></div>
+
+
+
+
+
+
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 pt-5">
+                    <span class="fs-4 fw-medium mt-5">Sign Up & Save</span>
+                    <p class="fs-5 fw-normal text-secondary mt-3">Get exclusive offers, free shipping events & more by
+                        signing up for our promotional emails.
+
+                    </p>
+                    <div class="input-group mt-5 mb-5 position-relative ">
+                        <input type="text" class="form-control rounded-5 py-3" placeholder="Recipient's username"
+                            aria-label="Enter your e-mail adrress..." aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary rounded-end-5 py-3 px-5 position-absolute end-0"
+                            type="button" id="button-addon2"><iconify-icon icon="fa:send"></iconify-icon></button>
+                    </div>
+                    <span class="fs-5 fw-medium mt-2 text-center">Follow Us</span>
+                    <div class="mt-3">
+                        <a class="text-decoration-none text-white mt-4 " href="">
+                            <a href=""><iconify-icon class="icon fs-3 mx-2 bg-secondary rounded-circle p-2  text-white"
+                                    icon="line-md:youtube-filled"></iconify-icon> </a>
+                            <a href=""><iconify-icon class="icon fs-3 mx-2 bg-secondary rounded-circle p-2 text-white "
+                                    icon="line-md:facebook"></iconify-icon></a>
+                            <a href=""><iconify-icon class="icon fs-3 mx-2 bg-secondary rounded-circle p-2 text-white"
+                                    icon="line-md:instagram"></iconify-icon></a>
+                            <a href=""><iconify-icon class="icon fs-3 mx-2 bg-secondary rounded-circle p-2 text-white"
+                                    icon="line-md:telegram"></iconify-icon></a>
+                            <a href=""><iconify-icon class="icon fs-3 mx-2 bg-secondary rounded-circle p-2 text-white"
+                                    icon="line-md:twitter-filled"></iconify-icon></a>
+
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12 border border-1 border-black-50 border-end-0">
 
+            </div>
+        </div>
 
-                    <h4 class="px-5 pb-5 mt-5 pt-5">Recent Posts</h4>
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active px-5 pb-5">
-                                <p class="fs-5 fw-normal text-secondary">Streamer fish California halibut Pacific
-                                    saury.fish California hal Slickhead grunion lake trout. Canthigaster rostrata
-                                    spikefish brown trout loach summer flounder.
-
-                                </p>
-                                <h6 class="text-warning-emphasis fs-5 fw-medium">Nine Nine</h6>
-                                <span class="fs-5 fw-normal text-secondary">04 June, 2007 </span>
-                            </div>
-                            <div class="carousel-item px-5 pb-5">
-                                <p class="fs-5 fw-normal text-secondary">Streamer fish California halibut Pacific
-                                    saury.fish California hal Slickhead grunion lake trout. Canthigaster rostrata
-                                    spikefish brown trout loach summer flounder.
-
-                                </p>
-                                <h6 class="text-warning-emphasis fs-5 fw-medium">Nine Nine</h6>
-                                <span class="fs-5 fw-normal text-secondary">08 Feburary, 2020</span>
-                            </div>
-                            <div class="carousel-item px-5 pb-5">
-                                <p class="fs-5 fw-normal text-secondary">Streamer fish California halibut Pacific
-                                    saury.fish California hal Slickhead grunion lake trout. Canthigaster rostrata
-                                    spikefish brown trout loach summer flounder.
-
-                                </p>
-                                <h6 class="text-warning-emphasis fs-5 fw-medium">Nine Nine</h6>
-                                <span class="fs-5 fw-normal text-secondary">December 31, 2019</span>
-                            </div>
-                        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col0md-4 col-sm-12 col-12 pt-5">
+                    <div class="d-flex ">
+                        <a class="text-decoration-none" href="">Naturally </a>
+                        <p>All rights reserved </p>
+                        <a class="text-decoration-none" href="">by Ninetheme.</a>
                     </div>
+                </div>
+                <div class="col-lg-4 col0md-4 col-sm-12 col-12 pt-5"></div>
+                <div class="col-lg-4 col0md-4 col-sm-12 col-12 pt-5">
+                    <a class="text-decoration-none" href="">Privacy policy</a>
+                    <a class="text-decoration-none" href="">Shop</a>
+                    <a class="text-decoration-none" href="">Blog</a>
+
+
                 </div>
             </div>
         </div>
 
-
-
-        <div class="container mt-5 h-100">
-            <div class="row mt-5">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12 h-100 mt-5">
-                    <h1 class="fs-2 fw-bold mt-5">Get exclusive offers</h1>
-                    <p class="fs-5 fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        phasellus vestibulum fermentum laoreet.</p>
-                    <div>
-
-
-                        <div class="input-group mb-3 w-75 mt-5">
-                            <input type="email" class="form-control py-3 w-75"
-                                placeholder="Enter your e-mail adrress..." aria-label="Email Adrress"
-                                aria-describedby="button-addon2">
-                            <button class="btn btn-outline-secondary px-4 fs-3 " type="button"
-                                id="button-addon2"><iconify-icon icon="fa:send"></iconify-icon></button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-
-
-
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12 h-100  orange-juice-bg-img">
-
-                    <img class="img-fluid" src="/img/juice.jpg" alt="">
-                </div>
-            </div>
-        </div>
-
-
-        <footer class="bg-light pt-5">
-
-            <div class="container pt-5">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mt-5">
-                        <img src="/img/header logo.png" alt="">
-                        <p class="fs-5 fw-normal text-secondary mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nulla nec nisi ac turpis laoreet auctor sed sed turpis.</p>
-                        <span class="fs-5 fw-medium mt-5 ">Address</span>
-                        <p class="fs-6 fw-normal text-secondary">241 Devonshiren Street Lebanon, PA 17042</p>
-                        <span class="fs-5 fw-medium mt-5">Phone</span>
-                        <p class="fs-5 fw-normal text-secondary">+1-800-123-45-67</p>
-                        <span class="fs-5 fw-medium mt-5">Email</span>
-                        <p class="fs-5 fw-normal text-secondary ">sales@naturally.com</p>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 pt-5"></div>
-
-
-
-
-
-
-
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 pt-5">
-                        <span class="fs-4 fw-medium mt-5">Sign Up & Save</span>
-                        <p class="fs-5 fw-normal text-secondary mt-3">Get exclusive offers, free shipping events & more by
-                            signing up for our promotional emails.
-
-                        </p>
-                        <div class="input-group mt-5 mb-5 position-relative ">
-                            <input type="text" class="form-control rounded-5 py-3" placeholder="Recipient's username"
-                                aria-label="Enter your e-mail adrress..." aria-describedby="button-addon2">
-                            <button class="btn btn-outline-secondary rounded-end-5 py-3 px-5 position-absolute end-0" type="button" id="button-addon2"><iconify-icon icon="fa:send"></iconify-icon></button>
-                        </div>
-                        <span class="fs-5 fw-medium mt-2 text-center">Follow Us</span>
-                        <div class="mt-3">
-                            <a class="text-decoration-none text-white mt-4 " href="">
-                                <a href=""><iconify-icon
-                                        class="icon fs-3 mx-2 bg-secondary rounded-circle p-2  text-white"
-                                        icon="line-md:youtube-filled"></iconify-icon> </a>
-                                <a href=""><iconify-icon
-                                        class="icon fs-3 mx-2 bg-secondary rounded-circle p-2 text-white "
-                                        icon="line-md:facebook"></iconify-icon></a>
-                                <a href=""><iconify-icon
-                                        class="icon fs-3 mx-2 bg-secondary rounded-circle p-2 text-white"
-                                        icon="line-md:instagram"></iconify-icon></a>
-                                <a href=""><iconify-icon
-                                        class="icon fs-3 mx-2 bg-secondary rounded-circle p-2 text-white"
-                                        icon="line-md:telegram"></iconify-icon></a>
-                                <a href=""><iconify-icon
-                                        class="icon fs-3 mx-2 bg-secondary rounded-circle p-2 text-white"
-                                        icon="line-md:twitter-filled"></iconify-icon></a>
-
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col0md-4 col-sm-12 col-12 pt-5">
-                        <div class="d-flex ">
-                            <a class="text-decoration-none" href="">Naturally </a>
-                            <p>All rights reserved </p>
-                            <a class="text-decoration-none" href="">by Ninetheme.</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col0md-4 col-sm-12 col-12 pt-5"></div>
-                    <div class="col-lg-4 col0md-4 col-sm-12 col-12 pt-5">
-                        <a class="text-decoration-none" href="">Privacy policy</a>
-                        <a class="text-decoration-none" href="">Shop</a>
-                        <a class="text-decoration-none" href="">Blog</a>
-
-
-                    </div>
-                </div>
-            </div>
-
-        </footer>
+    </footer>
 
 
 
