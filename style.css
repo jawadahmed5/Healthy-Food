@@ -21,6 +21,8 @@ h1{
 .hero-section {
     background-image: url("/img/hero-1.jpg");
     padding-top: 210px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .second-hero-pic{

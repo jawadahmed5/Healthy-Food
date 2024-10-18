@@ -286,10 +286,12 @@
 
                         </ul>
 
-                        <button class="d-flex justify-content-between bg-white border border-dark-subtle rounded-3">
+                        <button class="d-flex justify-content-between  bg-white border border-dark-subtle rounded-3 btn type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <iconify-icon class="icon fs-3 text-center "
                                 icon="material-symbols:shopping-bag-outline"></iconify-icon> <span class="fs-5">$0.00 /
                                 0 items</span>
+
+
                         </button>
 
                         <iconify-icon class="icon fs-3 mx-2 " icon="tabler:heart"></iconify-icon>
@@ -395,20 +397,21 @@
         <p class="fs-5 fw-normal text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
 
-    <div class="container">
-        <div class="row ">
-            <div class="col-lg-3 col-md-3 col-sm-12 col-12  mt-sm-5 ">
-                <div class="p-4 border border-1 border-black-50 rounded-3">
-                    <img class="img-fluid" src="/img/product-card-1.jpg" alt="">
-                    <div class="text-center ">
+    <div class="container"> 
+        <div class="row">
+            <!-- Product Card -->
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5">
+                <div class="p-4 border border-1 border-black-50 rounded-3 product-card" data-name="Organic Grape" data-price="12.40">
+                    <img class="img-fluid product-image" src="/img/product-card-1.jpg" alt="Product 1">
+                    <div class="text-center">
                         <button class="mt-4 rounded-5 border-0 py-2 px-3 fw-medium fs-6">N-Farm</button>
-                        <p class="mt-4 fs-5 fw-normal">Organic Grape</p>
-                        <s class="fs-5 fw-normal text-body-tertiary">$14.40</s><span
-                            class="fs-5 fw-normal ms-3">$12.40</span>
-                        <div class="">
+                        <p class="mt-4 fs-5 fw-normal product-name">Organic Grape</p>
+                        <s class="fs-5 fw-normal text-body-tertiary">$14.40</s>
+                        <span class="fs-5 fw-normal ms-3 product-price">$12.40</span>
+                        <div class="mt-3 text-center">
                             <button class=" card-group border-0 bg-white text-center mt-3">
                                 <iconify-icon
-                                    class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
+                                    class="add-to-cart-btn border border-1 border-black-50 p-2 bg-white text-secondary  fw-bold fs-3 "
                                     icon="line-md:arrow-right"></iconify-icon>
                                 <iconify-icon
                                     class="border border-1 border-black-50 p-2 bg-white text-secondary  fw-bolder fs-3 "
@@ -424,6 +427,8 @@
                     </div>
                 </div>
             </div>
+    
+      
 
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-sm-5 ">
                 <div class="p-4 border border-1 border-black-50 rounded-3">
@@ -880,7 +885,7 @@
 
     <!-- Footer -->
 
-    <footer class="bg-light pt-5 text-sm-center  ">
+    <footer class="bg-light pt-5 text-center text-lg-start text-md-start">
         <div class="container pt-5">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 mt-5">
@@ -932,14 +937,14 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col0md-4 col-sm-12 col-12 pt-5">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 pt-5 text-center text-lg-start text-md-start">
                     <div class="d-flex ">
                         <a class="text-decoration-none" href="">Naturally </a>
                         <p>All rights reserved </p>
                         <a class="text-decoration-none" href="">by Ninetheme.</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col0md-4 col-sm-12 col-12 pt-5"></div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 pt-5 "></div>
                 <div class="col-lg-4 col0md-4 col-sm-12 col-12 pt-5">
                     <a class="text-decoration-none" href="">Privacy policy</a>
                     <a class="text-decoration-none" href="">Shop</a>
@@ -951,9 +956,32 @@
 
 
 
-    <!-- Offcanvas -->
+
 
     </div>
+
+<!-- offCanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <iconify-icon class="icon fs-1 fw-bolder" icon="mdi-light:cart"></iconify-icon>
+        <h4 class="fs-6 fw-bolder" id="cartMessage">Your shopping cart is currently empty!</h4>
+        <span class="fs-6 fw-light">Explore our wide range of products and add items to your cart to proceed with your purchase.</span>
+
+        <!-- Cart Items List -->
+        <ul id="cartList" class="cart-items mt-4">
+            <!-- Items will be dynamically added here -->
+        </ul>
+    </div>
+</div>
+
+
+
+
+
     <!-- SEARCH MODAL -->
     <div class="">
         <div class="offcanvas offcanvas-top  h-25" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel ">
@@ -965,7 +993,7 @@
             </div>
         </div>
     </div>
-    <script src="java.js"></script>
+    <script src="/js pages/script.js"></script>
 </body>
 
 </html>
