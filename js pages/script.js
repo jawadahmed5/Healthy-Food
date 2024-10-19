@@ -47,9 +47,9 @@ function isProductInCart(productName) {
 function addCartItem(imageSrc, name, price, updateTotal = true) {
     const cartItem = document.createElement('li');
     cartItem.classList.add('cart-item');
-    cartItem.setAttribute('data-name', name); // To identify by product name
+    cartItem.setAttribute('data-name', name);
     cartItem.innerHTML = `
-        <img src="${imageSrc}" alt="${name}" width="100">
+        <img src="${imageSrc}" alt="${name}" width="60">
         <span class="cart-item-name fs-5">${name}</span> - <span class="cart-item-price fs-5">$${price.toFixed(2)}</span>
         <button class="remove-from-cart bg-transparent border-0 fs-2">
         <iconify-icon class="icon bg-white text-danger" icon="weui:delete-filled"></iconify-icon>
@@ -61,7 +61,7 @@ function addCartItem(imageSrc, name, price, updateTotal = true) {
         totalPrice += price;
         totalQuantity += 1;
         document.getElementById('totalPrice').innerText = totalPrice.toFixed(2);
-        updateCartQuantity(); // Update cart quantity display
+        updateCartQuantity();
     }
 
     cartItem.querySelector('.remove-from-cart').addEventListener('click', function() {
@@ -75,6 +75,26 @@ function addCartItem(imageSrc, name, price, updateTotal = true) {
     });
 
     
+    saveCartToLocalStorage();
+}
+
+
+function addToCart(product) {
+    const productName = product.getAttribute('data-name');
+    const productPrice = parseFloat(product.getAttribute('data-price'));
+    const productImageSrc = product.querySelector('.product-image').src;
+
+
+    if (isProductInCart(productName)) {
+        alert('This product is already in the cart!');
+        return;
+    }
+
+
+    addCartItem(productImageSrc, productName, productPrice);
+
+
+    updateCartMessage();
     saveCartToLocalStorage();
 }
 
