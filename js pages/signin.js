@@ -3,13 +3,13 @@ document.getElementById("userDetail").addEventListener('submit', function(e){
 
 
 
-let localEamil = localStorage.getItem("Email")
+let localEmail = localStorage.getItem("Email")
 let localPassword = localStorage.getItem("Password")
 
 let email =document.getElementById("signinEmail").value
 let password =document.getElementById("signinPassword").value
 
-if (localEamil === email && localPassword === password) {
+if (localEmail === email && localPassword === password) {
 
     window.location.href="/index pages/home.html"
 
