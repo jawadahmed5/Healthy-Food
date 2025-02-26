@@ -11,7 +11,7 @@ let password =document.getElementById("signinPassword").value
 
 if (localEmail === email && localPassword === password) {
 
-    window.location.href="/index pages/home.html"
+    window.location.href="/index pages/index.html"
 
 }else {
         alert('Invalid data')
